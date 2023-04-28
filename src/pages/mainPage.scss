@@ -1,0 +1,228 @@
+.search {
+  & .col {
+    padding: 0;
+
+    &:nth-child(1) {
+      & .ant-select {
+        & * {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+        }
+
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      & .ant-select {
+        & * {
+          border-radius: 0;
+        }
+
+        border-radius: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      & .ant-picker {
+        height: 100%;
+
+        & * {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+        }
+
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    & .ant-picker, .ant-select , .ant-btn{
+      width: 80% !important;
+    }
+    & .ant-btn {
+      margin-top: 1rem;
+    }
+    & * {
+      border-radius: 6px !important;
+    }
+    & .col {
+      display: flex;
+      justify-content: center;
+      &:nth-child(1) {
+        & .ant-select {
+          & * {
+            border-bottom-right-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+          }
+
+          border-bottom-right-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+        }
+      }
+
+      &:nth-child(2) {
+        & .ant-select {
+          & * {
+            border-radius: 0 !important;
+          }
+
+          border-radius: 0 !important;
+        }
+      }
+
+      &:nth-child(3) {
+        & .ant-picker {
+          height: 100%;
+
+          & * {
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+          }
+
+          border-top-left-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.item-date {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+}
+
+.item-duration {
+  font-size: 1rem;
+  text-overflow: ellipsis;
+}
+
+.trip-step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.passenger-count-step-card {
+  padding: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 3rem; // Adjust the padding for tablet devices
+  }
+  @media (max-width: 480px) {
+    padding: 1.5rem; // Adjust the padding for phone devices
+  }
+
+}
+
+.passenger-form, .customer-form {
+  padding: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 3rem; // Adjust the padding for tablet devices
+  }
+  @media (max-width: 480px) {
+    padding: 1.5rem; // Adjust the padding for phone devices
+  }
+}
+
+.payment-card {
+  padding: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.next-button {
+  min-width: 120px;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select-button-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.me-auto {
+  margin-right: 0 !important;
+}
+
+#basic-navbar-nav {
+  justify-content: flex-end;
+}
+
+.passenger-count-number-input {
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.main-content {
+  flex: 4;
+}
+
+.sticky-card-container {
+  display: none;
+
+  @media (min-width: 992px) {
+    flex: 2;
+    display: block;
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+.sticky-card {
+  padding: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-card-stepper {
+  & .ant-steps-item-title {
+    color: black !important;
+  }
+
+  & .ant-steps-item-description {
+    color: #424543 !important;
+  }
+}
+
+body {
+  background-color: #f5f5f5 !important;
+}
+#__next {
+  background-color: #f5f5f5 !important;
+}
+
+
